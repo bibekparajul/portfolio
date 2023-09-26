@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bbek Parajuli</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5707548c66.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html"><img src="images/logo.png" alt="mylogo" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onClick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Passionate .NET Developer</p>
+          <h1>Welcome to My Portfolio</h1>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- about section starts -->
+
+    <div id="about">
+      <div class="container">
+        <h1 class="sub-title">About Me</h1>
+        <div class="row">
+          <div class="col-1">
+            <img src="images/about.jpg" alt="" class="about-image" />
+          </div>
+          <div class="col-2">
+            
+            <p>
+              I am Bibek Parajuli, a dedicated learner, skilled designer, 
+              and proficient Backend Developer with an insatiable curiosity for emerging technologies.
+            </p>
+            <div class="title-topic">
+              <p class="tab-links active-link" onclick="starttab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="starttab('education')">Education</p>
+              <p class="tab-links" onclick="starttab('workexperience')">Experience</p>
+            </div>
+
+            <div class="topic-contents active-tab" id="skills">
+              <ul>
+                <li><span>Flutter</span><br />Mobile Development</li>
+                <li><span>Dot Net</span><br />Backend Development</li>
+                <li><span>Illustrator</span><br/>Arts and Logos</li>
+                <li><span>UI/UX</span><br />Designing the interfaces.</li>
+              </ul>
+            </div>
+
+            <div class="topic-contents" id="education">
+              <ul>
+                <li><span>2017</span><br />SEE(3.85)</li>
+                <li>
+                  <span>2017-2019(+2)</span><br />Golden Gate International
+                  College(3.55)
+                </li>
+                <li><span>2019- Current</span><br />New Summit College</li>
+              </ul>
+            </div>
+
+            <div class="topic-contents" id="workexperience">
+              <ul>
+                <li>
+                  <span>June-September(2023)</span><br />Dot Net Trainee at Bajra technologies
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio begins here -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img height="400" src="images/ecommerce.jpg" alt="" />
+            <div class="label">
+              <h3>Ecommerce ASP DOT NET</h3>
+              <p>
+                  Full Ecommerce website using asp .net mvc
+              </p>
+              <a href="https://github.com/bibekparajul/Ecommerce_ASP_DOTNET"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/admin_traffic.jpg" height="400" alt="" />
+            <div class="label">
+              <h3>Traffic Fine Management System</h3>
+              <p>In this app taffic generate the ticket online who violate the traffic law and the person pays the 
+                fine at the same time which saves the time and helps to maintain tranparency</p>
+              <a href="https://github.com/bibekparajul/TrafficFineSystemWeb"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/API.jpg" height="400" alt="" />
+            <div class="label">
+              <h3>Asp Dotnet CRUD Web Api</h3>
+              <p>Created the web api which is used to create, update, and edit the employee.</p>
+              <a href="https://github.com/bibekparajul/Asp_DotNet_WebApi_CRUD"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <iframe style="margin-top:10px" src="https://bibekparajul.github.io/project_showcase/" width="100%" height="500"></iframe>
+
+
+        <a href="https://github.com/bibekparajul/" class="btn">See More on Github</a>
+        
+      </div>
+    </div>
+
+
+
+    <!-- contact-form -->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title"><p>Contact Me</p></h1>
+            <div class="row">
+                <div class="left">
+                    <a href="" class="btn">parajulibbek11@gmail.com<i class="fa-solid fa-envelope"></i></a>
+                    
+                    
+                    <div class="social-icons">
+                     <a href="https://www.linkedin.com/in/bibek-parajuli-7749b8215/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/bibek.parajuli.9235/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/soul_bbek/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <div class="right">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <p>&copyby bibekParajuli<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var topiccontents = document.getElementsByClassName("topic-contents");
+
+      function starttab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (topiccontent of topiccontents) {
+          topiccontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+      }
+    </script>
+
+    <script>
+
+        var sidemenus = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenus.style.right = "0";
+        }
+        function closemenu(){
+            sidemenus.style.right = "-200px";
+        }
+    </script>
+
+<!-- google sheet -->
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzovLS2tdRJzRe5308n-kA9nvxMOfoFGvybBHABBMtP45_ly3tXtzLn6DDsYB8jnQZO/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {msg.innerHTML = "Successfully sent message"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+      form.reset()}
+          )
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
